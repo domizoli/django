@@ -1,0 +1,165 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Resumé</title>
+   <link rel="stylesheet" href="{% static "/css/cv_style.css" %}">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+<div class="container">
+  <div class="left">
+    <div class="profil-text">
+      <div class="image-box">
+        <img src="{% static "/pics/me.jpg" %}" alt="photo of me">
+      </div>
+      <h2>{{ cv_user.first.name }}<br/><span>Electrical Engineer</span></h2>
+    </div>
+<div class="left-main">
+    <div class="contact-info">
+      <h3 class="title">Contact Info</h3>
+      <ul>
+        <li>
+          <span class="icon"><i class="fa fa-phone" aria-hidden="true"></i></span>
+          <span class="text">+502 5866 1532</span>
+        </li>
+        <li>
+          <span class="icon"><i class="fa fa-envelope" aria-hidden="true"></i></span>
+          <span class="text"><a href="mailto: zoltan.g.domonkos@gmail.com">{{ cv_user.first.email }}</a></span>
+        </li>
+        <li>
+          <span class="icon"><i class="fa fa-linkedin" aria-hidden="true"></i></span>
+          <span class="text"><a href="www.linkedin.com/in/domonkos-zoltan">linkedin.com/in/domonkos-zoltan</a></span>
+        </li>
+        <li>
+          <span class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></span>
+          <span class="text"><a href="https://www.google.com/maps/@14.6045005,-90.6748683,15.68z?entry=ttu&g_ep=EgoyMDI0MDkyNC4wIKXMDSoASAFQAw%3D%3D">San Bartolomé Milpas Altas</span><br><span style="margin-left: 25px">Guatemala</span></a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="contact-info education">
+      <h3 class="title">Education</h3>
+      <ul>
+        <li>
+          <h5>2018 - 2022</h5>
+          <h4>Electrical Engineer</h4>
+          <h4>University of Debrecen</h4>
+        </li>
+        <li>
+          <h5>2008 - 2009</h5>
+          <h4>System Administrator</h4>
+          <h4>MIOK Secondary School</h4>
+        </li>
+        <li>
+          <h5>2000</h5>
+          <h4>Electrical Technican</h4>
+          <h4>Endre Suranyi Secondary School</h4>
+        </li>
+      </ul>
+    </div>
+
+    <div class="contact-info languages">
+      <h3 class="title">Languages</h3>
+      <ul>
+        <li>
+          <span class="text">Hungarian</span>
+          <span class="level">
+            <div style="width: 100%;"></div>
+          </span>
+        </li>
+        <li>
+          <span class="text">English</span>
+          <span class="level">
+            <div style="width: 60%;"></div>
+          </span>
+        </li>
+        <li>
+          <span class="text">Spanish</span>
+          <span class="level">
+            <div style="width: 30%;"></div>
+          </span>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>    
+  <div class="right">
+    <div class="about">
+      <h2 class="title2">Profile</h2>
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus, accusantium.Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, quibusdam.</p>
+    </div>
+    <div class="about">
+      <h2 class="title2">Experience</h2>
+      <div class="box">
+        <div class="year">
+          <h5>2023 - Present</h5>
+          <h5>Instituto de Investigación Atómica de Debrecen, Hungría</h5>
+        </div>
+        <div class="text">
+          <h4>Ingeniero de Desarrollo de Procesos</h4>
+          <p>El Instituto de Investigación Atómica de Debrecen (Atomki) es un centro
+            líder en física nuclear y de partículas en Hungría. Utiliza aceleradores de
+            partículas para investigación científica avanzada.
+            - Trabajé como ingeniero, operando el acelerador Tandetron y
+            desarrollando sistemas basados en microcontroladores para mejorar la
+            eficiencia de los aceleradores</p>
+          </div>
+        </div>
+      <div class="box">
+        <div class="year">
+          <h5>2023 - Present</h5>
+          <h5>Instituto de Investigación Atómica de Debrecen, Hungría</h5>
+        </div>
+        <div class="text">
+          <h4>Ingeniero de Desarrollo de Procesos</h4>
+          <p>El Instituto de Investigación Atómica de Debrecen (Atomki) es un centro
+            líder en física nuclear y de partículas en Hungría. Utiliza aceleradores de
+            partículas para investigación científica avanzada.
+            - Trabajé como ingeniero, operando el acelerador Tandetron y
+            desarrollando sistemas basados en microcontroladores para mejorar la
+            eficiencia de los aceleradores</p>
+          </div>
+        </div>
+      <div class="box">
+        <div class="year">
+          <h5>2023 - Present</h5>
+          <h5>Instituto de Investigación Atómica de Debrecen, Hungría</h5>
+        </div>
+        <div class="text">
+          <h4>Ingeniero de Desarrollo de Procesos</h4>
+          <p>El Instituto de Investigación Atómica de Debrecen (Atomki) es un centro
+            líder en física nuclear y de partículas en Hungría. Utiliza aceleradores de
+            partículas para investigación científica avanzada.
+            - Trabajé como ingeniero, operando el acelerador Tandetron y
+            desarrollando sistemas basados en microcontroladores para mejorar la
+            eficiencia de los aceleradores</p>
+          </div>
+        </div>
+      <div class="box">
+        <div class="year">
+          <h5>2023 - Present</h5>
+          <h5>Instituto de Investigación Atómica de Debrecen, Hungría</h5>
+        </div>
+        <div class="text">
+          <h4>Ingeniero de Desarrollo de Procesos</h4>
+          <p>El Instituto de Investigación Atómica de Debrecen (Atomki) es un centro
+            líder en física nuclear y de partículas en Hungría. Utiliza aceleradores de
+            partículas para investigación científica avanzada.
+            - Trabajé como ingeniero, operando el acelerador Tandetron y
+            desarrollando sistemas basados en microcontroladores para mejorar la
+            eficiencia de los aceleradores</p>
+          </div>
+        </div>
+        <div class="about skills">
+          <h2 class="title2">Profession Skills</h2>
+          <p class="skills">Python, C, Node-Red, PHP, Javascript, HTML, CSS, Labview, Microcontollers, MQTT, SQL, InfluxDB, SQL, Grafana, Linux, Windows</p>
+        </div>
+  </div>
+</div>
+
+</body>
+</html>
