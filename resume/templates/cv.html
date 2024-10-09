@@ -1,0 +1,224 @@
+{% load static %}
+{% load i18n %}
+{% load flags %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Resumé</title>
+   <link rel="shortcut icon" href="{% static '/pics/favicon.svg' %}" type="image/x-icon">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+   <link rel="stylesheet" href="{% static '/css/cv_style.css' %}">
+</head> 
+<body>
+  
+<nav class="navbar navbar-dark bg-dark">
+  <ul class="nav nav-tabs languages-menu">
+      <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">{% trans "Languages" %}</a>
+      <ul class="dropdown-menu">
+        {% get_current_language as LANGUAGE_CODE %}
+        {% get_available_languages as LANGUAGES %}
+        {% get_language_info_list for LANGUAGES as languages %}
+        {% for lang in languages %}
+        <li>
+          <a class="dropdown-item" href="/{{ lang.code }}/">
+            <img class="flag" src="{% static "/pics/flags/" %}{{ lang.code }}.svg">{{ lang.name_local }}
+          </a>
+        </li>
+        {% endfor %}
+      </ul>
+  </ul>
+</nav>
+
+<div class="wrapper">
+  <i class="bi bi-moon-fill change-theme" title="Change theme" id="theme-button"></i>
+  <i class="bi bi-file-arrow-down-fill print2pdf" title="Download" id="print2pdf"></i>
+  <div class="container" id="area-cv">
+    <div class="left">
+      <div class="profil-text">
+        <div class="image-box">
+          <img src="{% static "/pics/me.jpg" %}" alt="photo of me">
+        </div>
+        <h2>{% trans "Zoltan Domonkos" %}<br/><span> {% trans "Electrical Engineer" %}</span></h2>
+      </div>
+      <div class="left-main">
+        <!-- Left side - Contact info -->
+          <div class="contact-info">
+            <h3 class="title">{% trans "Contact Info" %} </h3>
+            <ul>
+              <li>
+                <span class="icon"><i class="fa fa-phone" aria-hidden="true"></i></span>
+                <span class="text"><a href="https://wa.me/50258661532">+502 5866 1532</a></span>
+              </li>
+              <li>
+                <span class="icon"><i class="fa fa-envelope" aria-hidden="true"></i></span>
+                <span class="text"><a href="zoltan.g.domonkos@gmail.com">zoltan.g.domonkos@gmail.com</a></span>
+              </li>
+              <li>
+                <span class="icon"><i class="fa fa-linkedin" aria-hidden="true"></i></span>
+                <span class="text"><a href="https://linkedin.com/in/domonkos-zoltan">linkedin.com/in/domonkos-zoltan</a></span>
+              </li>
+              <li>
+                <span class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></span>
+                <span class="text"><a href="https://www.google.com/maps/@14.6045005,-90.6748683,15.68z?entry=ttu&g_ep=EgoyMDI0MDkyNC4wIKXMDSoASAFQAw%3D%3D">San Bartolomé, Guatemala</a>
+              </li>
+            </ul>
+          </div>
+        <!-- ********************** -->
+        <!-- Left-side - Eductation -->
+          <div class="contact-info education">
+            <h3 class="title">{% trans "Education" %}</h3>
+            <ul>
+              <li>
+                <h5>2018 - 2022</h5>
+                <h4>{% trans "Electrical Engineer" %}</h4>
+                <h4>{% trans "University of Debrecen" %}</h4>
+              </li>
+              <li>
+                <h5>2008 - 2009</h5>
+                <h4>{% trans "System Administrator" %}</h4>
+                <h4>{% trans "MIOK Secondary School" %}</h4>
+              </li>
+              <li>
+                <h5>2000</h5>
+                <h4>{% trans "Electrical Technican" %}</h4>
+                <h4>{% trans "Endre Suranyi Secondary School" %}</h4>
+              </li>
+            </ul>
+          </div>
+        <!-- ************************ -->
+        <!-- Left side - Languages -->
+          <div class="contact-info languages">
+            <h3 class="title">{% trans "Languages" %}</h3>
+            <ul>
+              <li>
+                <span class="text">{% trans "Hungarian" %}</span>
+                <span class="level">
+                  <div style="width: 100%;"></div>
+                </span>
+              </li>
+              <li>
+                <span class="text">{% trans "English" %}</span>
+                <span class="level">
+                  <div style="width: 60%;"></div>
+                </span>
+              </li>
+              <li>
+                <span class="text">{% trans "Spanish" %}</span>
+                <span class="level">
+                  <div style="width: 30%;"></div>
+                </span>
+              </li>
+            </ul>
+          </div>
+        <!-- ********************* -->
+        <!-- Left side - Skills -->
+          <div class="contact-info skills">
+            <h3 class="title">{% trans "Skills" %}</h3>
+            <span class="skill">Python</span>
+            <span class="skill">C</span>
+            <span class="skill">Node-Red</span>
+            <span class="skill">PHP</span>
+            <span class="skill">Javascript</span>
+            <span class="skill">HTML</span>
+            <span class="skill">CSS</span>
+            <span class="skill">Labview</span>
+            <span class="skill">Microcontollers</span>
+            <span class="skill">MQTT</span>
+            <span class="skill">SQL</span>
+            <span class="skill">InfluxDB</span>
+            <span class="skill">SQL</span>
+            <span class="skill">Grafana</span>
+            <span class="skill">Linux</span>
+            <span class="skill">Windows</span>
+          </div>
+        <!-- ********************* -->
+</div>
+</div>    
+<div class="right">
+  <!-- Right side - About -->
+    <div class="about">
+      <h2 class="title2">{% trans "Profile" %}</h2>
+      <p>{% blocktrans %}I am a creative professional with strong problem-solving skills and a commitment to excellence. I am dedicated to continuous self-improvement and consistently perform tasks with precision, reliability, and cost-effectiveness.{% endblocktrans %}</p>
+    </div>
+  <!-- ****************** -->
+  <!-- Right side - Experience  -->
+    <div class="about">
+      <h2 class="title2">{% trans "Experience" %}</h2>
+      <div class="box">
+        <div class="year">
+          <h5>{% trans "2023 - Present" %}</h5>
+          <h5>{% trans "HUN-REN Institute for Nuclear Research" %}</h5>
+        </div>
+        <div class="text">
+          <h4>{% trans "Electrical Engineer" %}</h4>
+          <p>{% trans "Project: Improving and developing the existing monitoring system" %}</p>
+        </div>
+      </div>
+      <div class="box">
+        <div class="year">
+          <h5>{% trans "2022 - 2023" %}</h5>
+          <h5>{% trans "HUN-REN Institute for Nuclear Research" %}</h5>
+        </div>
+        <div class="text">
+          <h4>{% trans "Engineer - Operator" %}</h4>
+            <ul>
+              <li>{% trans "Developed radiation protection systems" %}</li>
+              <li>{% trans "Set up ion beams for particle accelerators" %}</li>
+              <li>{% trans "Participated in innovative solutions" %}</li>
+              <li>{% trans "Operated and maintained vacuum systems" %}</li>
+              <li>{% trans "Provided support to scientific staff" %}</li>
+            </ul>
+          </div>
+        </div>
+        <div class="box">
+          <div class="year">
+            <h5>{% trans "2020 - 2022" %}</h5>
+            <h5>{% trans "HUN-REN Institute for Nuclear Research" %}</h5>
+          </div>
+          <div class="text">
+            <h4>{% trans "Linux System Administrator" %}</h4>
+            <ul>
+              <li>{% trans "Fixed issues on the corporate website" %}</li>
+              <li>{% trans "Administered Linux-based systems" %}</li>
+              <li>{% trans "Resolved system-wide issues" %}</li>
+              <li>{% trans "Developed the company’s IT structure" %}</li>
+              <li>{% trans "Provided sound engineering support during presentations" %}</li>
+            </ul>
+          </div>
+        </div>
+          <div class="box">
+            <div class="year">
+              <h5>{% trans "2019 - 2020" %}</h5>
+              <h5>{% trans "Web-Server Ltd" %}</h5>
+            </div>
+            <div class="text">
+              <h4>{% trans "System Administrator - DevOps" %}</h4>
+              <ul>
+                <li>{% trans "Maintained, tested, and improved hardware; troubleshooting" %}</li>
+                <li>{% trans "Fixed issues in Linux hosting and email systems, wrote scripts" %}</li>
+                <li>{% trans "Coordinated with front office colleagues and provided assistance" %}</li>
+                <li>{% trans "Participated in projects, created project plans" %}</li>
+                <li>{% trans "Utilized Docker, Rancher, Kubernetes, and virtualization technologies" %}</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+  <!-- ****************** -->
+</div>
+
+
+<script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="{% static '/js/cv.js' %}"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
+

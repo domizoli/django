@@ -15,14 +15,22 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path
-from resume import views
+from django.urls import path, include
 from .import views
 from resume import views
+from django.conf.urls.i18n import i18n_patterns
+from django.utils.translation import gettext_lazy as _
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
+    path(_('admin/'), admin.site.urls),
     path('cv/', views.cv, name='cv'),
     path('', views.main),
+    path('', include('resume.urls', namespace='resume')),
     path('newuser/', views.newuser, name='newuser'),
+    path('i18n/', include('django.conf.urls.i18n')),
+    path('i18n/', include('django_translation_flags.urls')),
 ]
+
+urlpatterns += i18n_patterns (
+  path('', include('resume.urls', namespace='lang'))
+)

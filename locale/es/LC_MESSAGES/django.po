@@ -1,0 +1,200 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-10-08 21:40-0600\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=n == 1 ? 0 : n != 0 && n % 1000000 == 0 ? "
+"1 : 2;\n"
+
+#: .\Portfolio\settings.py:117 .\resume\templates\cv.html:99
+msgid "Hungarian"
+msgstr ""
+
+#: .\Portfolio\settings.py:118 .\resume\templates\cv.html:105
+msgid "English"
+msgstr ""
+
+#: .\Portfolio\settings.py:119 .\resume\templates\cv.html:111
+msgid "Spanish"
+msgstr ""
+
+#: .\Portfolio\urls.py:25
+msgid "admin/"
+msgstr ""
+
+#: .\resume\templates\cv.html:21 .\resume\templates\cv.html:96
+msgid "Languages"
+msgstr "Idiomas"
+
+#: .\resume\templates\cv.html:46
+msgid "Zoltan Domonkos"
+msgstr "Zoltan Domonkos"
+
+#: .\resume\templates\cv.html:46 .\resume\templates\cv.html:78
+#: .\resume\templates\cv.html:158
+msgid "Electrical Engineer"
+msgstr "Ingeniero Electrico"
+
+#: .\resume\templates\cv.html:51
+msgid "Contact Info"
+msgstr ""
+
+#: .\resume\templates\cv.html:74
+msgid "Education"
+msgstr ""
+
+#: .\resume\templates\cv.html:79
+msgid "University of Debrecen"
+msgstr "Universidad de Debrecen"
+
+#: .\resume\templates\cv.html:83
+msgid "System Administrator"
+msgstr "Administrador de Sistemas"
+
+#: .\resume\templates\cv.html:84
+msgid "MIOK Secondary School"
+msgstr ""
+
+#: .\resume\templates\cv.html:88
+#, fuzzy
+#| msgid "Electrical Engineer"
+msgid "Electrical Technican"
+msgstr "Ingeniero Electrico"
+
+#: .\resume\templates\cv.html:89
+msgid "Endre Suranyi Secondary School"
+msgstr ""
+
+#: .\resume\templates\cv.html:121
+msgid "Skills"
+msgstr ""
+
+#: .\resume\templates\cv.html:145
+msgid "Profile"
+msgstr ""
+
+#: .\resume\templates\cv.html:146
+msgid ""
+"I am a creative professional with strong problem-solving skills and a "
+"commitment to excellence. I am dedicated to continuous self-improvement and "
+"consistently perform tasks with precision, reliability, and cost-"
+"effectiveness."
+msgstr ""
+
+#: .\resume\templates\cv.html:151
+msgid "Experience"
+msgstr ""
+
+#: .\resume\templates\cv.html:154
+msgid "2023 - Present"
+msgstr ""
+
+#: .\resume\templates\cv.html:155 .\resume\templates\cv.html:165
+#: .\resume\templates\cv.html:181
+msgid "HUN-REN Institute for Nuclear Research"
+msgstr "Instituto de Investigación Atómica de Debrecen, Hungría"
+
+#: .\resume\templates\cv.html:159
+msgid "Project: Improving and developing the existing monitoring system"
+msgstr ""
+
+#: .\resume\templates\cv.html:164
+msgid "2022 - 2023"
+msgstr "2022 - 2023"
+
+#: .\resume\templates\cv.html:168
+msgid "Engineer - Operator"
+msgstr "Ingeniero de Desarrollo de Procesos"
+
+#: .\resume\templates\cv.html:170
+msgid "Developed radiation protection systems"
+msgstr ""
+
+#: .\resume\templates\cv.html:171
+msgid "Set up ion beams for particle accelerators"
+msgstr ""
+
+#: .\resume\templates\cv.html:172
+msgid "Participated in innovative solutions"
+msgstr ""
+
+#: .\resume\templates\cv.html:173
+msgid "Operated and maintained vacuum systems"
+msgstr ""
+
+#: .\resume\templates\cv.html:174
+msgid "Provided support to scientific staff"
+msgstr ""
+
+#: .\resume\templates\cv.html:180
+msgid "2020 - 2022"
+msgstr ""
+
+#: .\resume\templates\cv.html:184
+msgid "Linux System Administrator"
+msgstr "Administrador de Sistemas Linux"
+
+#: .\resume\templates\cv.html:186
+msgid "Fixed issues on the corporate website"
+msgstr ""
+
+#: .\resume\templates\cv.html:187
+msgid "Administered Linux-based systems"
+msgstr ""
+
+#: .\resume\templates\cv.html:188
+msgid "Resolved system-wide issues"
+msgstr ""
+
+#: .\resume\templates\cv.html:189
+msgid "Developed the company’s IT structure"
+msgstr ""
+
+#: .\resume\templates\cv.html:190
+msgid "Provided sound engineering support during presentations"
+msgstr ""
+
+#: .\resume\templates\cv.html:196
+msgid "2019 - 2020"
+msgstr "2019 - 2020"
+
+#: .\resume\templates\cv.html:197
+msgid "Web-Server Ltd"
+msgstr ""
+
+#: .\resume\templates\cv.html:200
+msgid "System Administrator - DevOps"
+msgstr "Administrador de Sistemas - DevOps"
+
+#: .\resume\templates\cv.html:202
+msgid "Maintained, tested, and improved hardware; troubleshooting"
+msgstr ""
+
+#: .\resume\templates\cv.html:203
+msgid "Fixed issues in Linux hosting and email systems, wrote scripts"
+msgstr ""
+
+#: .\resume\templates\cv.html:204
+msgid "Coordinated with front office colleagues and provided assistance"
+msgstr ""
+
+#: .\resume\templates\cv.html:205
+msgid "Participated in projects, created project plans"
+msgstr ""
+
+#: .\resume\templates\cv.html:206
+msgid "Utilized Docker, Rancher, Kubernetes, and virtualization technologies"
+msgstr ""
