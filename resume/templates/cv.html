@@ -1,47 +1,17 @@
+{% extends "base.html" %}
 {% load static %}
 {% load i18n %}
 {% load flags %}
+{% block content %}
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Resumé</title>
-   <link rel="shortcut icon" href="{% static '/pics/favicon.svg' %}" type="image/x-icon">
-   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
-   <link rel="stylesheet" href="{% static '/css/cv_style.css' %}">
-</head> 
-<body>
-  
-<nav class="navbar navbar-dark bg-dark">
-  <ul class="nav nav-tabs languages-menu">
-      <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">{% trans "Languages" %}</a>
-      <ul class="dropdown-menu">
-        {% get_current_language as LANGUAGE_CODE %}
-        {% get_available_languages as LANGUAGES %}
-        {% get_language_info_list for LANGUAGES as languages %}
-        {% for lang in languages %}
-        <li>
-          <a class="dropdown-item" href="/{{ lang.code }}/">
-            <img class="flag" src="{% static "/pics/flags/" %}{{ lang.code }}.svg">{{ lang.name_local }}
-          </a>
-        </li>
-        {% endfor %}
-      </ul>
-  </ul>
-</nav>
-
-<div class="wrapper">
-  <i class="bi bi-moon-fill change-theme" title="Change theme" id="theme-button"></i>
-  <i class="bi bi-file-arrow-down-fill print2pdf" title="Download" id="print2pdf"></i>
-  <div class="container" id="area-cv">
+<div class="container">
+  <div class="row" id="area-cv">
+  <div class="col">
+  <div class="main">
     <div class="left">
       <div class="profil-text">
         <div class="image-box">
-          <img src="{% static "/pics/me.jpg" %}" alt="photo of me">
+          <img src="{% static "/pics/me.jpg" %}" alt="photo of me"/>
         </div>
         <h2>{% trans "Zoltan Domonkos" %}<br/><span> {% trans "Electrical Engineer" %}</span></h2>
       </div>
@@ -143,7 +113,7 @@
   <!-- Right side - About -->
     <div class="about">
       <h2 class="title2">{% trans "Profile" %}</h2>
-      <p>{% blocktrans %}I am a creative professional with strong problem-solving skills and a commitment to excellence. I am dedicated to continuous self-improvement and consistently perform tasks with precision, reliability, and cost-effectiveness.{% endblocktrans %}</p>
+      <p>{% trans "I am a creative professional with strong problemsolving skills and a commitment to excellence. I am dedicated to continuous self-improvement and consistently perform tasks with precision, reliability, and cost-effectiveness." %}</p>
     </div>
   <!-- ****************** -->
   <!-- Right side - Experience  -->
@@ -211,14 +181,11 @@
       </div>
   <!-- ****************** -->
 </div>
+</div>
+</div>
+</div>
+</div>
+{% endblock content %}
 
 
-<script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script src="{% static '/js/cv.js' %}"></script>
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-</body>
-</html>
 

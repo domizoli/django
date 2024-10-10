@@ -12,10 +12,10 @@
    --right-bg-color: #ffffff;
    --title-color: #0b0a0a;
    --text-color: #403a3a;
-   --container-color-alt: #fafafa;
+   --main-color-alt: #fafafa;
    --right-color: #202020;
    
-   --container-color: #707070;
+   --main-color: #707070;
    --blue-color: #00aeffb0;
    --body-bg-image: url('https://img.freepik.com/free-photo/white-paper-texture_1194-5416.jpg?t=st=1728432635~exp=1728436235~hmac=87a994837c61569cd8c63cb24fa2d473fbb07e724817a2ad595dd66b9c773ad3&w=996');
 }
@@ -42,69 +42,81 @@ body.dark-theme{
    --body-bg-image:  url('https://img.freepik.com/free-photo/black-felt-texture_125540-1548.jpg');
 }
 body{
-   display:flex;
-   position: relative;
-   justify-content: center;
-   align-items: center;
    min-height: 100vh;
    font-family: "roboto";
    font-optical-sizing: auto;
-   font-style: normal;
    word-break:keep-all;
    background: var(--body-bg-image);
    background-attachment: fixed;
    color: var(--bg-color);
-   padding-top: 60px;
 }
-ul{
-   padding: 0;
-   margin-bottom: 0;
-}
-.languages-menu{    
-   justify-content: right !important;
-   position: fixed !important;
-   z-index: 30 !important;
-   right: 0;
-   background: var(--body-bg-image);
-}
-.dropdown-menu[data-bs-popper]{
-   right: 0 !important;
-   left: unset !important;
-}
-.flag{
-   width: 1.7rem;
-   margin-right: 10px;
-}
-.change-theme{
-   position: absolute;
-   left: 15.5rem;
-   top: 1.5rem;
-   display: flex;
+
+.navbar-dark .navbar-nav .nav-link{color: var(--blue-color);}
+
+.navbar-expand-lg .navbar-nav{align-items: center;}
+
+.navbar-expand-lg .navbar-nav .dropdown-menu{right: 0; left: unset;}
+
+ul{padding: 0; margin-bottom: 0;}
+
+.flag{width: 1.7rem; margin-right: 10px;}
+
+.change-theme, .print2pdf{
    color: var(--blue-color);
-   font-size: 1.2rem;
    cursor: pointer;
-   z-index: 10;
    transition: .5s;
+   margin-right: 20px;
+   transition: .2s;
 }
-.change-theme:hover, .print2pdf:hover{
-   scale: 2;
-   transition: .5s ease-in-out;
-   rotate: 360deg;
+@media (max-width: 992px) {
+   .change-theme, .print2pdf{margin-right: 0}
 }
-.print2pdf{
-   position: absolute;
-   left: 1.5rem;
-   top: 1.5rem;
-   display: flex;
-   color: var(--blue-color);
-   font-size: 1.2rem;
-   cursor: pointer;
-   z-index: 10;
-   transition: .5s;
-}
-.wrapper{position: relative;}
+.change-theme:hover, .print2pdf:hover{color: var(--main-color-alt); transition: .2s;}
+
+.change-theme span, .print2pdf span{margin-left: 3px}
+
 .nav{justify-content: center; position: absolute; top: 0; left: 0;}
-.container{
+
+.navbar-expand-lg .navbar-collapse{justify-content: right;  margin-top: 1rem;}
+
+.navbar-expand-lg .navbar-nav{align-items: end;}
+
+.nav-link{padding: 0}
+
+.navbar-brand{margin-right: 5rem;}
+
+.main-menu{flex-direction: row; justify-content: left;}
+
+.main-menu li{
+   text-decoration: none;
+   color: var(--main-color-alt);
+   cursor: pointer;
+   transition: .5s;
+   margin-right: 20px;
+   transition: .2s;
+}
+.main-menu a{
+   text-decoration: none;
+   font-size: 1.2rem;
+   color: var(--main-color-alt);
+   margin-left: 3px;
+}
+.main-menu a:hover{
+   color: var(--blue-color);
+}
+.secondary-menu{
+   display: flex;
+   justify-content: right;
+}
+.secondary-menu li{
+   margin-bottom: 10px;
+   margin-bottom: 10px;
+   display: flex;
+   flex-direction: column;
+   justify-content: right;
+   align-items: end;
+}
+.main{
    position: relative ;
    height:297mm;
    width:210mm;
@@ -112,26 +124,25 @@ ul{
    display: grid;
    grid-template-columns: 300px 1fr;
    box-shadow: 0 0 5px 5px #20202059;
+   margin: 20px auto;
 }
-.container .left{
+.main .left{
    position: relative; 
    background: var(--left-bg-color); 
    padding: 15px;
-   margin-left: -12px;
-   margin-right: -1px;
 }
+
 .contact-info a{color: var(--left-text-color); text-decoration: none;}
 .contact-info a:hover{color: var(--left-color); text-decoration: none;}
 .contact-info.education li{color: var(--left-color); font-weight: 500;}
 .contact-info.education h5{font-size: .8rem;}
 .contact-info.education h4{color: var(--left-text-color); font-size: 16px; font-weight: 300;}
 .contact-info.education h4:nth-child(2){color: var(--left-text-color); font-weight: 500;}
-.container .right{
+
+.main .right{
    position: relative;
    background: var(--right-bg-color);
    padding: 20px;
-   margin-right: -12px;
-   margin-top: 0px;
 }
 .profil-text{
    position: relative;
@@ -229,13 +240,13 @@ ul{
    text-transform: uppercase;
    color: var(--right-color);
    letter-spacing: 1px;
-   margin-bottom: 10px;
+   font-weight: 600;
+   font-size: 1.3rem;
 }
 .right .about .box{
    display: flex;
    flex-direction: column;
-   margin: 10px 0;
-   gap: 5px;
+   margin: 0;
 }
 .right .about .box .year{min-width: 150px;}
 .right .about .year{

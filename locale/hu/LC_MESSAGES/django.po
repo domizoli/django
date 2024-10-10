@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-10-08 22:30-0600\n"
+"POT-Creation-Date: 2024-10-10 10:44-0600\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,15 +18,15 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: .\Portfolio\settings.py:117 .\resume\templates\cv.html:99
+#: .\Portfolio\settings.py:117 .\resume\templates\cv.html:147
 msgid "Hungarian"
 msgstr "Magyar"
 
-#: .\Portfolio\settings.py:118 .\resume\templates\cv.html:105
+#: .\Portfolio\settings.py:118 .\resume\templates\cv.html:153
 msgid "English"
 msgstr "Angol"
 
-#: .\Portfolio\settings.py:119 .\resume\templates\cv.html:111
+#: .\Portfolio\settings.py:119 .\resume\templates\cv.html:159
 msgid "Spanish"
 msgstr "Spanyol"
 
@@ -34,58 +34,64 @@ msgstr "Spanyol"
 msgid "admin/"
 msgstr "admin/"
 
-#: .\resume\templates\cv.html:21 .\resume\templates\cv.html:96
+#: .\resume\templates\cv.html:35
+msgid "Theme"
+msgstr ""
+
+#: .\resume\templates\cv.html:38
+msgid "Download"
+msgstr ""
+
+#: .\resume\templates\cv.html:41 .\resume\templates\cv.html:144
 msgid "Languages"
 msgstr "Nyelvek"
 
-#: .\resume\templates\cv.html:46
+#: .\resume\templates\cv.html:94
 msgid "Zoltan Domonkos"
 msgstr "Domonkos Zoltán"
 
-#: .\resume\templates\cv.html:46 .\resume\templates\cv.html:78
-#: .\resume\templates\cv.html:158
+#: .\resume\templates\cv.html:94 .\resume\templates\cv.html:126
+#: .\resume\templates\cv.html:206
 msgid "Electrical Engineer"
 msgstr "Villamosmérnök"
 
-#: .\resume\templates\cv.html:51
+#: .\resume\templates\cv.html:99
 msgid "Contact Info"
 msgstr "Kontakt Info"
 
-#: .\resume\templates\cv.html:74
+#: .\resume\templates\cv.html:122
 msgid "Education"
 msgstr "Tanulmányok"
 
-#: .\resume\templates\cv.html:79
+#: .\resume\templates\cv.html:127
 msgid "University of Debrecen"
 msgstr "Debreceni Egyetem"
 
-#: .\resume\templates\cv.html:83
+#: .\resume\templates\cv.html:131
 msgid "System Administrator"
 msgstr "Rendszergazda"
 
-#: .\resume\templates\cv.html:84
+#: .\resume\templates\cv.html:132
 msgid "MIOK Secondary School"
 msgstr "MIOK József Nádor"
 
-#: .\resume\templates\cv.html:88
-#, fuzzy
-#| msgid "Electrical Engineer"
+#: .\resume\templates\cv.html:136
 msgid "Electrical Technican"
 msgstr "Villamosmérnök"
 
-#: .\resume\templates\cv.html:89
+#: .\resume\templates\cv.html:137
 msgid "Endre Suranyi Secondary School"
 msgstr "Surányi Endre Középiskola"
 
-#: .\resume\templates\cv.html:121
+#: .\resume\templates\cv.html:169
 msgid "Skills"
 msgstr "Képességek"
 
-#: .\resume\templates\cv.html:145
+#: .\resume\templates\cv.html:193
 msgid "Profile"
 msgstr "Profil"
 
-#: .\resume\templates\cv.html:146
+#: .\resume\templates\cv.html:194
 #, fuzzy
 #| msgid ""
 #| "I am a creative professional with strong problem-solving skills and a "
@@ -93,7 +99,7 @@ msgstr "Profil"
 #| "and consistently perform tasks with precision, reliability, and "
 #| "costeffectiveness."
 msgid ""
-"I am a creative professional with strong problem-solving skills and a "
+"I am a creative professional with strong problemsolving skills and a "
 "commitment to excellence. I am dedicated to continuous self-improvement and "
 "consistently perform tasks with precision, reliability, and cost-"
 "effectiveness."
@@ -101,115 +107,108 @@ msgstr ""
 "Kreatív és jó problémamegoldó ember vagyok. Folyamatosan törekszem az "
 "önfejlesztésre, munkámat mindig pontosan és megbízhatóan végzem."
 
-#: .\resume\templates\cv.html:151
+#: .\resume\templates\cv.html:199
 msgid "Experience"
 msgstr "Tapasztalatok"
 
-#: .\resume\templates\cv.html:154
+#: .\resume\templates\cv.html:202
 msgid "2023 - Present"
 msgstr "2023 - Jelenleg"
 
-#: .\resume\templates\cv.html:155 .\resume\templates\cv.html:165
-#: .\resume\templates\cv.html:181
+#: .\resume\templates\cv.html:203 .\resume\templates\cv.html:213
+#: .\resume\templates\cv.html:229
 msgid "HUN-REN Institute for Nuclear Research"
 msgstr "HUN-REN Atommagkutató Intézet"
 
-#: .\resume\templates\cv.html:159
+#: .\resume\templates\cv.html:207
 msgid "Project: Improving and developing the existing monitoring system"
 msgstr "Prjokektmunka: A meglévő monitoring rendszer javítása és fejlesztése"
 
-#: .\resume\templates\cv.html:164
+#: .\resume\templates\cv.html:212
 msgid "2022 - 2023"
 msgstr "2022 - 2023"
 
-#: .\resume\templates\cv.html:168
+#: .\resume\templates\cv.html:216
 msgid "Engineer - Operator"
 msgstr "Mérnök - Operátor"
 
-#: .\resume\templates\cv.html:170
+#: .\resume\templates\cv.html:218
 msgid "Developed radiation protection systems"
 msgstr "A sugárvédelmi rendszer fejlesztése"
 
-#: .\resume\templates\cv.html:171
+#: .\resume\templates\cv.html:219
 msgid "Set up ion beams for particle accelerators"
 msgstr "A gyorsító ionsugárnak beállítása"
 
-#: .\resume\templates\cv.html:172
+#: .\resume\templates\cv.html:220
 msgid "Participated in innovative solutions"
 msgstr "Innovatív fejlesztésekben való részvétel"
 
-#: .\resume\templates\cv.html:173
+#: .\resume\templates\cv.html:221
 msgid "Operated and maintained vacuum systems"
 msgstr "A vákuum rendszer kezelése és karbantartása"
 
-#: .\resume\templates\cv.html:174
+#: .\resume\templates\cv.html:222
 msgid "Provided support to scientific staff"
 msgstr "Tudományos munkatrásak támogogatása"
 
-#: .\resume\templates\cv.html:180
+#: .\resume\templates\cv.html:228
 msgid "2020 - 2022"
 msgstr "2020 - 2022"
 
-#: .\resume\templates\cv.html:184
-#, fuzzy
-#| msgid "System Administrator"
+#: .\resume\templates\cv.html:232
 msgid "Linux System Administrator"
 msgstr "Linux Rendszergazda"
 
-#: .\resume\templates\cv.html:186
+#: .\resume\templates\cv.html:234
 msgid "Fixed issues on the corporate website"
 msgstr "Vállalati weboldal hibáinak javítása"
 
-#: .\resume\templates\cv.html:187
+#: .\resume\templates\cv.html:235
 msgid "Administered Linux-based systems"
 msgstr "Linux alapú rendszerek adminisztrációja"
 
-#: .\resume\templates\cv.html:188
+#: .\resume\templates\cv.html:236
 msgid "Resolved system-wide issues"
 msgstr "Hibák elhárítása az vállalat egész területén"
 
-#: .\resume\templates\cv.html:189
+#: .\resume\templates\cv.html:237
 msgid "Developed the company’s IT structure"
 msgstr "A vállalati informatikai struktúra fejlesztése"
 
-#: .\resume\templates\cv.html:190
+#: .\resume\templates\cv.html:238
 msgid "Provided sound engineering support during presentations"
 msgstr "Hangtechnikusi támogatás előadásokon"
 
-#: .\resume\templates\cv.html:196
+#: .\resume\templates\cv.html:244
 msgid "2019 - 2020"
 msgstr "2019 - 2020"
 
-#: .\resume\templates\cv.html:197
+#: .\resume\templates\cv.html:245
 msgid "Web-Server Ltd"
 msgstr "Web-Server Kft"
 
-#: .\resume\templates\cv.html:200
-#, fuzzy
-#| msgid "System Administrator"
+#: .\resume\templates\cv.html:248
 msgid "System Administrator - DevOps"
 msgstr "Rendszergazda - DevOps"
 
-#: .\resume\templates\cv.html:202
+#: .\resume\templates\cv.html:250
 msgid "Maintained, tested, and improved hardware; troubleshooting"
 msgstr "Hardverek karbantartása, tesztelése, fejlesztése, hibafelderítés"
 
-#: .\resume\templates\cv.html:203
+#: .\resume\templates\cv.html:251
 msgid "Fixed issues in Linux hosting and email systems, wrote scripts"
 msgstr ""
 "Linux hosting és email rendszerekben fellépő hibák javítása, scriptek írása"
 
-#: .\resume\templates\cv.html:204
+#: .\resume\templates\cv.html:252
 msgid "Coordinated with front office colleagues and provided assistance"
 msgstr "Kapcsolattartás a front office kollégákkal, segítségnyújtás"
 
-#: .\resume\templates\cv.html:205
+#: .\resume\templates\cv.html:253
 msgid "Participated in projects, created project plans"
 msgstr "Projektekben való részvétel, kivitelezés, projektterv készítés"
 
-#: .\resume\templates\cv.html:206
+#: .\resume\templates\cv.html:254
 msgid "Utilized Docker, Rancher, Kubernetes, and virtualization technologies"
 msgstr "Docker, Rancher, Kubernetes és virtualizációs technológia használata"
-
-#~ msgid "Instituto de Investigación Atómica de Debrecen, Hungría"
-#~ msgstr "HUN-REN Atommagkutató Intézet"

@@ -24,7 +24,7 @@ from django.utils.translation import gettext_lazy as _
 urlpatterns = [
     path(_('admin/'), admin.site.urls),
     path('cv/', views.cv, name='cv'),
-    path('', views.main),
+    path('', views.main, name='home'),
     path('', include('resume.urls', namespace='resume')),
     path('newuser/', views.newuser, name='newuser'),
     path('i18n/', include('django.conf.urls.i18n')),
