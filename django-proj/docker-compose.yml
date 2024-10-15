@@ -13,4 +13,4 @@ services:
     environment:
       - DEBUG=1
       - SECRET_KEY=56f456d4f5ds4f5ds4fd54a6f4
-      - ALLOWED_HOSTS=localhost, 127.0.0.1, 192.168.0.12
+      - ALLOWED_HOSTS=localhost, 127.0.0.1, 192.168.0.0
