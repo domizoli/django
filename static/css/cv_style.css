@@ -50,6 +50,30 @@ body{
    background-attachment: fixed;
    color: var(--bg-color);
 }
+h5{
+   font-size: 16px;
+}
+p{
+   margin-bottom: 0;
+}
+.profil{
+   position: absolute;
+   top: 10px;
+   left: 300px;
+   width: 484px;
+   height: 110px;
+   background-color: var(--left-bg-color);
+   border-top-right-radius: 100px;
+   border-bottom-right-radius: 100px;
+   color: var(--left-text-color);
+   padding: 20px;
+}
+@media print {
+   .pagebreak {
+       clear: both;
+       page-break-after: always;
+   }
+}
 
 .navbar-dark .navbar-nav .nav-link{color: var(--blue-color);}
 
@@ -70,6 +94,9 @@ ul{padding: 0; margin-bottom: 0;}
 }
 @media (max-width: 992px) {
    .change-theme, .print2pdf{margin-right: 0}
+}
+@media (min-width: 992px) {
+   .navbar-expand-lg .navbar-nav .nav-link{padding: 0 !important;}
 }
 .change-theme:hover, .print2pdf:hover{color: var(--main-color-alt); transition: .2s;}
 
@@ -115,24 +142,28 @@ ul{padding: 0; margin-bottom: 0;}
    flex-direction: column;
    justify-content: right;
    align-items: end;
+   font-style: italic;
 }
 .main{
    position: relative ;
-   height:297mm;
+   /* height:297mm; */
    width:210mm;
    background: rgba(255, 255, 255, 1);
    display: grid;
    grid-template-columns: 300px 1fr;
    box-shadow: 0 0 5px 5px #20202059;
    margin: 20px auto;
+   border-top-right-radius: 63px;
+   border-bottom-left-radius: 63px;
 }
 .main .left{
    position: relative; 
    background: var(--left-bg-color); 
    padding: 15px;
+   border-bottom-left-radius: 63px;
 }
 
-.contact-info a{color: var(--left-text-color); text-decoration: none;}
+.contact-info a{color: var(--left-text-color); text-decoration: none; font-size: 15px}
 .contact-info a:hover{color: var(--left-color); text-decoration: none;}
 .contact-info.education li{color: var(--left-color); font-weight: 500;}
 .contact-info.education h5{font-size: .8rem;}
@@ -142,7 +173,8 @@ ul{padding: 0; margin-bottom: 0;}
 .main .right{
    position: relative;
    background: var(--right-bg-color);
-   padding: 20px;
+   padding: 0 20px 20px 20px;
+   margin-top: 135px;
 }
 .profil-text{
    position: relative;
@@ -154,8 +186,8 @@ ul{padding: 0; margin-bottom: 0;}
 }
 .profil-text .image-box{
    position: relative;
-   width: 200px;
-   height: 200px;
+   width: 150px;
+   height: 150px;
    border-radius: 50%;
    overflow: hidden;
 }
@@ -247,26 +279,33 @@ ul{padding: 0; margin-bottom: 0;}
    display: flex;
    flex-direction: column;
    margin: 0;
+   margin-top: 15px;
 }
 .right .about .box .year{min-width: 150px;}
 .right .about .year{
    text-transform: uppercase;
    color: var(--right-color);
    font-weight: 600;
+   display: flex;
+   justify-content: space-between;
+   border-bottom: 1px solid black;
+   color: var(--blue-color);
+   margin-bottom: 10px;
+   font-style: italic;
 }
 .right .about .year h5:first-child{
    color: var(--blue-color);
    font-size: 16px;
-   border-bottom: 1px solid var(--right-color);
-   margin-bottom: 10px;
    font-style: italic;
+}
+.year h5{
+   border-bottom: 0 !important;
 }
 .right .about .box .text h4{
    text-transform: uppercase;
    text-align: left;
    color: var(--right-color);
    font-size: 16px;
-   /* border-bottom: 1px solid var(--right-color); */
    margin-bottom: 10px;
 }
 .right p{

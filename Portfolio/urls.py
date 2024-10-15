@@ -25,12 +25,12 @@ urlpatterns = [
     path(_('admin/'), admin.site.urls),
     path('cv/', views.cv, name='cv'),
     path('', views.main, name='home'),
-    path('', include('resume.urls', namespace='resume')),
-    path('newuser/', views.newuser, name='newuser'),
-    path('i18n/', include('django.conf.urls.i18n')),
-    path('i18n/', include('django_translation_flags.urls')),
+    # path('', include('resume.urls', namespace='resume')),
+    # path('newuser/', views.newuser, name='newuser'),
+    # path('i18n/', include('django.conf.urls.i18n')),
+    # path('i18n/', include('django_translation_flags.urls')),
 ]
 
 urlpatterns += i18n_patterns (
-  path('', include('resume.urls', namespace='lang'))
+  path('/', include('resume.urls', namespace='lang'))
 )

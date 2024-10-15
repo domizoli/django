@@ -23,12 +23,14 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = 'django-insecure-)bpni0*z3dmp#1qp*&mq+u$n#_&(9gf1#07)!n$wi(xzs+wh8n'
+# SECRET_KEY =  os.environ.get("SECRET_KEY")
 
-# SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
+# DEBUG = os.environ.get("DEBUG")
 
-ALLOWED_HOSTS = []
-
+# ALLOWED_HOSTS = ['zobjektiv.hu', '127.0.0.1', 'localhost', '192.168.0.12']
+# ALLOWED_HOSTS = os.environ.get("ALLOWED_HOSTS")
+ALLOWED_HOSTS = ['*']
 
 # Application definition
 
@@ -43,6 +45,7 @@ INSTALLED_APPS = [
     'phonenumbers',
     'resume',
     'django_translation_flags',
+    'gunicorn',
 ]
 
 MIDDLEWARE = [

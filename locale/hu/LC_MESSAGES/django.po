@@ -92,20 +92,12 @@ msgid "Profile"
 msgstr "Profil"
 
 #: .\resume\templates\cv.html:194
-#, fuzzy
-#| msgid ""
-#| "I am a creative professional with strong problem-solving skills and a "
-#| "commitment to excellence. I am dedicated to continuous self-improvement "
-#| "and consistently perform tasks with precision, reliability, and "
-#| "costeffectiveness."
 msgid ""
 "I am a creative professional with strong problemsolving skills and a "
 "commitment to excellence. I am dedicated to continuous self-improvement and "
 "consistently perform tasks with precision, reliability, and cost-"
 "effectiveness."
-msgstr ""
-"Kreatív és jó problémamegoldó ember vagyok. Folyamatosan törekszem az "
-"önfejlesztésre, munkámat mindig pontosan és megbízhatóan végzem."
+msgstr "Kreatív és jó problémamegoldó ember vagyok. Folyamatosan törekszem az önfejlesztésre, munkámat mindig pontosan és megbízhatóan végzem."
 
 #: .\resume\templates\cv.html:199
 msgid "Experience"

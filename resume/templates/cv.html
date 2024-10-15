@@ -6,15 +6,19 @@
 
 <div class="container">
   <div class="row" id="area-cv">
-  <div class="col">
-  <div class="main">
-    <div class="left">
-      <div class="profil-text">
-        <div class="image-box">
-          <img src="{% static '/pics/me.jpg' %}" alt="photo of me"/>
-        </div>
-        <h2>{% trans "Zoltan Domonkos" %}<br/><span> {% trans "Electrical Engineer" %}</span></h2>
-      </div>
+    <div class="col">
+      <div class="main">
+        <div class="left">
+        <!-- Profil -->
+          <div class="profil">
+            <p>{% trans "I am a creative professional with strong problemsolving skills and a commitment to excellence. I am dedicated to continuous self-improvement and consistently perform tasks with precision, reliability, and cost-effectiveness." %}</p>
+          </div>
+          <div class="profil-text">
+            <div class="image-box">
+              <img src="{% static '/pics/me.jpg' %}" alt="photo of me"/>
+            </div>
+            <h2>{% trans "Zoltan Domonkos" %}<br/><span> {% trans "Electrical Engineer" %}</span></h2>
+          </div>
       <div class="left-main">
         <!-- Left side - Contact info -->
           <div class="contact-info">
@@ -107,81 +111,111 @@
             <span class="skill">Windows</span>
           </div>
         <!-- ********************* -->
-</div>
-</div>    
-<div class="right">
-  <!-- Right side - About -->
-    <div class="about">
-      <h2 class="title2">{% trans "Profile" %}</h2>
-      <p>{% trans "I am a creative professional with strong problemsolving skills and a commitment to excellence. I am dedicated to continuous self-improvement and consistently perform tasks with precision, reliability, and cost-effectiveness." %}</p>
-    </div>
-  <!-- ****************** -->
-  <!-- Right side - Experience  -->
-    <div class="about">
-      <h2 class="title2">{% trans "Experience" %}</h2>
-      <div class="box">
-        <div class="year">
-          <h5>{% trans "2023 - Present" %}</h5>
-          <h5>{% trans "HUN-REN Institute for Nuclear Research" %}</h5>
-        </div>
-        <div class="text">
-          <h4>{% trans "Electrical Engineer" %}</h4>
-          <p>{% trans "Project: Improving and developing the existing monitoring system" %}</p>
-        </div>
       </div>
-      <div class="box">
-        <div class="year">
-          <h5>{% trans "2022 - 2023" %}</h5>
-          <h5>{% trans "HUN-REN Institute for Nuclear Research" %}</h5>
-        </div>
-        <div class="text">
-          <h4>{% trans "Engineer - Operator" %}</h4>
-            <ul>
-              <li>{% trans "Developed radiation protection systems" %}</li>
-              <li>{% trans "Set up ion beams for particle accelerators" %}</li>
-              <li>{% trans "Participated in innovative solutions" %}</li>
-              <li>{% trans "Operated and maintained vacuum systems" %}</li>
-              <li>{% trans "Provided support to scientific staff" %}</li>
-            </ul>
+    </div>    
+    <div class="right">
+    <!-- ****************** -->
+    <!-- Right side - Experience  -->
+      <div class="about">
+        <h2 class="title2">{% trans "Experience" %}</h2>
+        <div class="box">
+          <div class="year">
+            <h5>{% trans "2023 - Present" %}</h5>
+            <h5>{% trans "HUN-REN Institute for Nuclear Research" %}</h5>
+          </div>
+          <div class="text">
+            <h4>{% trans "Electrical Engineer" %}</h4>
+            <p>{% trans "Project: Improving and developing the existing monitoring system" %}</p>
           </div>
         </div>
         <div class="box">
           <div class="year">
-            <h5>{% trans "2020 - 2022" %}</h5>
+            <h5>{% trans "2022 - 2023" %}</h5>
             <h5>{% trans "HUN-REN Institute for Nuclear Research" %}</h5>
           </div>
           <div class="text">
-            <h4>{% trans "Linux System Administrator" %}</h4>
-            <ul>
-              <li>{% trans "Fixed issues on the corporate website" %}</li>
-              <li>{% trans "Administered Linux-based systems" %}</li>
-              <li>{% trans "Resolved system-wide issues" %}</li>
-              <li>{% trans "Developed the company’s IT structure" %}</li>
-              <li>{% trans "Provided sound engineering support during presentations" %}</li>
-            </ul>
-          </div>
-        </div>
-          <div class="box">
-            <div class="year">
-              <h5>{% trans "2019 - 2020" %}</h5>
-              <h5>{% trans "Web-Server Ltd" %}</h5>
-            </div>
-            <div class="text">
-              <h4>{% trans "System Administrator - DevOps" %}</h4>
+            <h4>{% trans "Engineer - Operator" %}</h4>
               <ul>
-                <li>{% trans "Maintained, tested, and improved hardware; troubleshooting" %}</li>
-                <li>{% trans "Fixed issues in Linux hosting and email systems, wrote scripts" %}</li>
-                <li>{% trans "Coordinated with front office colleagues and provided assistance" %}</li>
-                <li>{% trans "Participated in projects, created project plans" %}</li>
-                <li>{% trans "Utilized Docker, Rancher, Kubernetes, and virtualization technologies" %}</li>
+                <li>{% trans "Developed radiation protection systems" %}</li>
+                <li>{% trans "Set up ion beams for particle accelerators" %}</li>
+                <li>{% trans "Participated in innovative solutions" %}</li>
+                <li>{% trans "Operated and maintained vacuum systems" %}</li>
+                <li>{% trans "Provided support to scientific staff" %}</li>
               </ul>
             </div>
           </div>
+          <div class="box">
+            <div class="year">
+              <h5>{% trans "2020 - 2022" %}</h5>
+              <h5>{% trans "HUN-REN Institute for Nuclear Research" %}</h5>
+            </div>
+            <div class="text">
+              <h4>{% trans "Linux System Administrator" %}</h4>
+              <ul>
+                <li>{% trans "Fixed issues on the corporate website" %}</li>
+                <li>{% trans "Administered Linux-based systems" %}</li>
+                <li>{% trans "Resolved system-wide issues" %}</li>
+                <li>{% trans "Developed the company’s IT structure" %}</li>
+                <li>{% trans "Provided sound engineering support during presentations" %}</li>
+              </ul>
+            </div>
+          </div>
+            <div class="box">
+              <div class="year">
+                <h5>{% trans "2019 - 2020" %}</h5>
+                <h5>{% trans "Web-Server Ltd" %}</h5>
+              </div>
+              <div class="text">
+                <h4>{% trans "System Administrator - DevOps" %}</h4>
+                <ul>
+                  <li>{% trans "Maintained, tested, and improved hardware; troubleshooting" %}</li>
+                  <li>{% trans "Fixed issues in Linux hosting and email systems, wrote scripts" %}</li>
+                  <li>{% trans "Coordinated with front office colleagues and provided assistance" %}</li>
+                  <li>{% trans "Participated in projects, created project plans" %}</li>
+                  <li>{% trans "Utilized Docker, Rancher, Kubernetes, and virtualization technologies" %}</li>
+                </ul>
+              </div>
+            </div>
+            <div class="pagebreak"> </div>
+            <div class="box">
+              <div class="year">
+                <h5>{% trans "2016 - 2019" %}</h5>
+                <h5>{% trans "Hajduboszormeny School District Center" %}</h5>
+              </div>
+              <div class="text">
+                <h4>{% trans "System Administrator" %}</h4>
+              </div>
+            </div>
+            <div class="box">
+              <div class="year">
+                <h5>{% trans "2014 - 2016" %}</h5>
+                <h5>{% trans "Decom-2003 Ltd" %}</h5>
+              </div>
+              <div class="text">
+                <h4>{% trans "Computer and Electronics Technician" %}</h4>
+              </div>
+            </div>
+            <div class="box">
+              <div class="year">
+                <h5>{% trans "2002 - 2012" %}</h5>
+                <h5>{% trans "BorsodChem Plc" %}</h5>
+              </div>
+              <div class="text">
+                <h4>{% trans "Instrumentation Technician" %}</h4>
+                <ul>
+                  <li>{% trans "Troubleshooting and resolving issues in the chemical (isocyanate) industry" %}</li>
+                  <li>{% trans "Designed and implemented new control loops" %}</li>
+                  <li>{% trans "Installed camera systems and implemented computer networks" %}</li>
+                  <li>{% trans "Installed, maintained, and repaired measuring instruments and sensors" %}</li>
+                  <li>{% trans "Programmed and calibrated transmitters" %}</li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
   <!-- ****************** -->
-</div>
-</div>
+    </div>
+  </div>
 </div>
 </div>
 </div>
